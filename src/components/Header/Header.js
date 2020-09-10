@@ -6,8 +6,8 @@ const Header = () => {
     <div className='container-fluid'>
       <header>
         <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-          <div className='container'>
-            <Link to='/' className='navbar-brand'>
+          <div className='container-fluid'>
+            <Link to='/' className='navbar-brand mr-auto'>
               School System
             </Link>
             <button
@@ -28,7 +28,7 @@ const Header = () => {
             >
               <ul className='navbar-nav ml-auto'>
                 <li className='nav-item active'>
-                  <Link className='nav-link' to='/' exact>
+                  <Link className='nav-link' to='/'>
                     Home
                   </Link>
                 </li>

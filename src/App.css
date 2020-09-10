@@ -1,0 +1,8 @@
+body {
+  background-image: linear-gradient(to right bottom, #bfc5be80, #ecf5f28f),
+    url(./assets/background.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}

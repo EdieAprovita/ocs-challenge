@@ -1,9 +1,9 @@
 import React from 'react';
 
-const studentTable = (props) => {
+const teacherTable = () => {
   return (
     <div className='container-fluid'>
-      <h1 className='text-center'>Students Register Form</h1>
+      <h1 className='text-center'>Teacher Register Form</h1>
 
       <div class='form-group'>
         <label for='exampleFormControlInput1'>Name</label>
@@ -56,4 +56,4 @@ const studentTable = (props) => {
   );
 };
 
-export default studentTable;
+export default teacherTable;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const studentTable = (props) => (
+const teacherTable = (props) => (
   <table>
     <thead>
       <tr>
@@ -10,22 +10,22 @@ const studentTable = (props) => (
       </tr>
     </thead>
     <tbody>
-      {props.students.length > 0 ? (
-        props.students.map((student) => (
-          <tr key={student.id}>
-            <td>{student.name}</td>
-            <td>{student.username}</td>
+      {props.teachers.length > 0 ? (
+        props.teachers.map((teacher) => (
+          <tr key={teacher.id}>
+            <td>{teacher.name}</td>
+            <td>{teacher.username}</td>
             <td>
               <button
                 onClick={() => {
-                  props.editRow(student);
+                  props.editRow(teacher);
                 }}
                 className='button muted-button'
               >
                 Edit
               </button>
               <button
-                onClick={() => props.deleteStudent(student.name)}
+                onClick={() => props.deleteTeacher(teacher.id)}
                 className='button muted-button'
               >
                 Delete
@@ -42,4 +42,4 @@ const studentTable = (props) => (
   </table>
 );
 
-export default studentTable;
+export default teacherTable;
